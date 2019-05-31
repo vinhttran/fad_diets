@@ -1,5 +1,9 @@
 # Analyzing the Popularity and Attitudes of “Fad” Diets
 
+### Link to Presentation
+Keynote: https://drive.google.com/file/d/1eELvOFhvU7BpXIzDhOLDOIlTbJy5KrYq/view?usp=sharing
+PDF: https://drive.google.com/file/d/1RrDwgiRb_zyAFHyjcw0eih1gRjDUZj0p/view?usp=sharing
+
 ## Project Description
 Analyzing tweets mentioning “fad” diets over Memorial Day weekend by assessing their popularity and analyzing sentiment. The diets studied were: Keto, paleo, gluten-free, Whole30, low-fat, and Mediterranean.
 
