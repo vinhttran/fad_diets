@@ -16,18 +16,18 @@ Measuring sentiment on social media is the next frontier of guiding research. Fr
 ![image](images/top_users.png)
 4. Subset the data for only english tweets since I am not as well-versed with cultural and language differences pertaining to fad diets. Also, the sentiment analysis must be done in English. This takes the data from 13,000 to 9,953 tweets.
 5. Perform more EDA. Plot the popularity of the diets. Keto is by far the most mentioned diet, followed by paleo, gluten-free and Whole-30. I would have thought Whole30 would have been higher because #Whole30 is an official hashtag and backed by a company.
-..a. I used “lost” as a keyword proxy for weight-loss (i.e. someone will say “I lost 30 lbs on Keto) and “start” as a keyword proxy for starting a diet (i.e. “I started Keto today). The trend of Keto, followed by paleo, being the most popular persists. Interestingly, Whole30 was the next most popular over gluten-free. Maybe more people are starting Whole30 and losing weight with Whole30 compared to gluten-free which is not as “trendy”, sometimes medically necessary, and not generally for weight-loss.
+  * I used “lost” as a keyword proxy for weight-loss (i.e. someone will say “I lost 30 lbs on Keto) and “start” as a keyword proxy for starting a diet (i.e. “I started Keto today). The trend of Keto, followed by paleo, being the most popular persists. Interestingly, Whole30 was the next most popular over gluten-free. Maybe more people are starting Whole30 and losing weight with Whole30 compared to gluten-free which is not as “trendy”, sometimes medically necessary, and not generally for weight-loss.
 ![image](images/Popularity_of_fad_diets.png)
 6. Next it is time to deal with retweets. These are indicated by the tweet starting with “RT”. Again, Keto followed by paleo is the most retweeted. I want to remove retweets because I only want to analyze the sentiment on original tweets. This leaves us with 5,683 tweets.
 7. Conduct sentiment analysis using Wit.AI (bought by Facebook).
   * Pip install Wit in the terminal.
   * Perform more cleaning. I want to deduplicate exact tweets (Note: I tested the analyzer with url’s and handles and these did not affect the score). Now there are 5,674 tweets.
-    c. Output a csv file containing only the ID and the tweet on each line with a header of “0, 1” ( tweet_diet_sentiment.csv). This is what I feed into the sentiment analyzer.
-    d. Run through the analyzer. The output is a confidence number (how confident the analyzer was assigning it a value) and a value (positive, negative, neutral). Output the results as a csv (outputs/tweet_diet_sentiment_result.csv)
+  * Output a csv file containing only the ID and the tweet on each line with a header of “0, 1” ( tweet_diet_sentiment.csv). This is what I feed into the sentiment analyzer.
+  * Run through the analyzer. The output is a confidence number (how confident the analyzer was assigning it a value) and a value (positive, negative, neutral). Output the results as a csv (outputs/tweet_diet_sentiment_result.csv)
 7. Once I have confidence numbers and values for every tweet, time to do some more EDA!
-    a. Looking at the number of positive, negative and neutral tweets, Keto has the most tweets as expected.
+  * Looking at the number of positive, negative and neutral tweets, Keto has the most tweets as expected.
 ![image](images/Keto_diet_sentiment.png)
-    b. Looking at the percentage, it appears that gluten-free has the greatest percentage of positive tweets. It also seems like people are very neutral about lowfat diet. Time for some hypothesis testing!
+  * Looking at the percentage, it appears that gluten-free has the greatest percentage of positive tweets. It also seems like people are very neutral about lowfat diet. Time for some hypothesis testing!
 ![image](images/Percent_Values_Tweets_by_Diet.png)
 
 ## Hypothesis Testing
