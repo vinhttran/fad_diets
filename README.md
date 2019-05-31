@@ -20,8 +20,8 @@ Measuring sentiment on social media is the next frontier of guiding research. Fr
 ![image](images/Popularity_of_fad_diets.png)
 6. Next it is time to deal with retweets. These are indicated by the tweet starting with “RT”. Again, Keto followed by paleo is the most retweeted. I want to remove retweets because I only want to analyze the sentiment on original tweets. This leaves us with 5,683 tweets.
 7. Conduct sentiment analysis using Wit.AI (bought by Facebook).
-    a. Pip install Wit in the terminal.
-    b. Perform more cleaning. I want to deduplicate exact tweets (Note: I tested the analyzer with url’s and handles and these did not affect the score). Now there are 5,674 tweets.
+  * Pip install Wit in the terminal.
+  * Perform more cleaning. I want to deduplicate exact tweets (Note: I tested the analyzer with url’s and handles and these did not affect the score). Now there are 5,674 tweets.
     c. Output a csv file containing only the ID and the tweet on each line with a header of “0, 1” ( tweet_diet_sentiment.csv). This is what I feed into the sentiment analyzer.
     d. Run through the analyzer. The output is a confidence number (how confident the analyzer was assigning it a value) and a value (positive, negative, neutral). Output the results as a csv (outputs/tweet_diet_sentiment_result.csv)
 7. Once I have confidence numbers and values for every tweet, time to do some more EDA!
