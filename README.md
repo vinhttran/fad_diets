@@ -49,6 +49,7 @@ From step 8 I noticed that gluten-free has the greatest percentage of positive t
 
 ### Hypothesis test 3
 As part of the EDA process I noticed that negative tweets had lower confidence than positive tweets. I tested to see if there was a difference using Welch’s and p< 0.001. Positive tweets have a significantly higher mean confidence than negative tweets.
+
 ![image](images/Confidence_box_plots.png)
 ![image](images/Confidence_of_Pos.png)
 
